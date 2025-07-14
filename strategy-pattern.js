@@ -10,8 +10,10 @@ class HealthForm {
 
     // Strategy-Pattern
     this.fieldHandlers = {
-      operator: () => this.updatePlansByOperator(store)
-      // future fields: exampleField: this.handleExampleField.bind(this),
+      operator: () => {
+        this.updatePlansByOperator(store)
+        // future validation: this.futureValidation(),
+      }
     };
 
     this.fields = {
